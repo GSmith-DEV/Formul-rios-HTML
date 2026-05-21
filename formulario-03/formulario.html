@@ -3,23 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>AvaliaIF - Avaliação de Disciplinas</title>
-
 </head>
 <body>
  <div class="caixa-teste">
-        <h2>Olá! Este é o comando na prática.</h2>
+        <h2>AvaliaIF</h2>
         <p>Repare como a caixa branca está centralizada, tem os cantos redondos e uma sombra suave no fundo.</p>
+  
     </div>
-
+<fieldset>
+            <legend> <h1>informações</h1></legend>
 </body>
     <form action="#" method="POST">
         <div class="informações">
   <label for="Nome_Diciplina">Nome da Diciplina:</label>
    <input type="text" id="nome-diciplina" 
     name="Nome_Diciplina" 
-    placeholder="Nome da Diciplina" required>
+    placeholder="Nome da Diciplina" required
+    >
+    
+  <label for="ID_Diciplina">Codigo de diciplina</label>
+   <input type="text" id="ID_Diciplina" 
+    name="ID_Diciplina" 
+    placeholder="Codigo de diciplina" required
+    >
+<br>
+   <label for="semestre">Semestre cursado :</label>
+    <select id="semestre" name="semestre">
+    <option value="">Selecione uma opção</option>
+<option value="2025.1">2025.1</option>
+<option value="2025.2">2025.2</option>
+<option value="2026.1">2026.1</option>
+<option value="2026.2">2026.2</option>
+<option value="2027.1">2027.1</option>
+<option value="2027.2">2027.2</option>  
+</select>
 
+<label for="data_avaliação">Data Avaliação:</label>
+   <input type="text" id="data_avaliação" 
+    name="data_avaliação" 
+    placeholder="data_avaliação" required
+    >
+ </fieldset>
         </div>
+   
     </form>
 
 </body>
