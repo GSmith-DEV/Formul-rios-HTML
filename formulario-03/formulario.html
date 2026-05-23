@@ -27,7 +27,9 @@
   <label for="ID_Diciplina">Codigo de diciplina</label>
    <input type="text" id="ID_Diciplina" 
     name="ID_Diciplina" 
-    placeholder="Codigo de diciplina" required
+    placeholder="Codigo de diciplina" 
+     pattern="[A-Z0-9]+" 
+     required
     >
 <br>
    <label for="semestre">Semestre cursado :</label>
@@ -42,7 +44,7 @@
 </select>
 
 <label for="data_avaliação">Data Avaliação:</label>
-   <input type="text" id="data_avaliação" 
+   <input type="date" id="data_avaliação" 
     name="data_avaliação" 
     placeholder="data_avaliação" required
     >
