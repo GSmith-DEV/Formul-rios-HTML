@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>AvaliaIF - Avaliação de Disciplinas</title>
 </head>
+
+
+
 <body>
  <div class="caixa-teste">
         <h2>AvaliaIF</h2>
@@ -45,7 +48,102 @@
     >
  </fieldset>
         </div>
-   
+  <div class="Avaliação">
+    <fieldset>
+            <legend> <h1>Avaliação</h1></legend>
+  <label for="nota-do-professor">Avaliação do Professor:</label>
+  <p>Valor selecionado: <span id="valor-nota">8</span>/10</p>
+  <input type="range" id="nota-do-professor" 
+    name="nota-do-professor" 
+    min="0" max="10" 
+    step="1" value="8" 
+    oninput="document.getElementById('valor-nota').textContent = this.value">
+
+  <h3>Aspectos Positivos da Disciplina</h3>
+  <p>Selecione até 6 opções sobre o que funcionou bem neste semestre:</p>
+
+  <label>
+    <input type="checkbox" name="aspectos_positivos" value="didatica"> 
+    Didática e clareza do professor
+  </label><br>
+
+  <label>
+    <input type="checkbox" name="aspectos_positivos" value="conteudo"> 
+    Conteúdo atualizado e relevante
+  </label><br>
+
+  <label>
+    <input type="checkbox" name="aspectos_positivos" value="cumprimento_prazo"> 
+    Cumprimento do cronograma e prazos
+  </label><br>
+
+  <label>
+    <input type="checkbox" name="aspectos_positivos" value="atendimento"> 
+    Disponibilidade para tirar dúvidas (atendimento ao aluno)
+  </label><br>
+
+  <label>
+    <input type="checkbox" name="aspectos_positivos" value="material"> 
+    Qualidade do material didático disponibilizado
+  </label><br>
+
+  <label>
+    <input type="checkbox" name="aspectos_positivos" value="avaliacao"> 
+    Métodos de avaliação justos e coerentes
+  </label>
+
+  <div class="Avaliação">
+  <label for="pontos-fortes"><h3>Pontos Fortes (Resposta Qualitativa)</h3></label>
+  
+  <textarea 
+    id="pontos-fortes" 
+    name="pontos_fortes" 
+    rows="5" 
+    cols="50" 
+    placeholder="Escreva aqui seus comentários sobre os pontos positivos..." 
+    maxlength="500"></textarea>
+    <br>
+    <label for="pontos-fortes"><h3>Pontos que tem que melhorar (Resposta Qualitativa)</h3></label>
+  <textarea 
+    id="pontos-melhora" 
+    name="pontos_melhora" 
+    rows="5" 
+    cols="50" 
+    placeholder="Escreva aqui seus comentários sobre os pontos positivos..." 
+    maxlength="500"></textarea>
+
+
+  <h3>Recomendação da Disciplina</h3>
+  <p>Você recomendaria esta disciplina para outros estudantes do IFAL?</p>
+
+  <label>
+    <input type="radio" name="recomendacao" value="sim" checked> 
+    Sim, com certeza.
+  </label><br>
+
+  <label>
+    <input type="radio" name="recomendacao" value="talvez"> 
+    Talvez, com ressalvas.
+  </label><br>
+
+  <label>
+    <input type="radio" name="recomendacao" value="nao"> 
+    Não recomendaria.
+  </label>
+  </div>
+  </fieldset>
+<div class="confirmação">
+  <label>
+    <input type="checkbox" name="envio_anonimo" value="sim"> 
+  Deseja fazer esse comanterio anonimo?
+  </label>
+
+<br>
+
+  <button type="submit" id="btn-enviar">Enviar Avaliação</button>
+
+
+   </div>
     </form>
 
 </body>
